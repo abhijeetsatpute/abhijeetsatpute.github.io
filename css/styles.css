@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush&display=swap');
+body{
+  background: #6B7777;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0
+}
+#navbar{  
+   display:flex;
+  
+  background-color:#133337	;
+  color:white !important;
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%; 
+  height:63px;
+}
+
+#navbar a {
+  height:200px;
+  color:white !important;
+  text-decoration: none;
+  color: black;
+  margin-top:20px;
+}
+#navbar ul{
+  
+  font-color: white;
+  font-size: 20px;
+  list-style:none;
+  display:flex;
+  justify-content: left;
+  text-align: left;
+  height:100%;
+}
+#navbar li{
+  display:block;
+  padding:20px;
+}
+li:hover {
+  background: #4e81c7;
+}
+li.ex:hover{
+
+}
+
+#welcome-section{
+color: #FEFDEB;
+ /* box-shadow: 0 0 20px 5px #f4f4f4;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background:url("https://images.pexels.com/photos/725743/pexels-photo-725743.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") center center no-repeat; 
+   background-size: cover;
+  background-attachment: fixed;
+}
+#welcome-section h1{
+margin-left:30%;
+font-family: "Dancing Script";
+font-size: 80px;
+ color: white;
+      
+}
+@media screen and (min-width: 480px) {
+  #welcome-section h1 { float: left;font-size:60px;}
+  #main {margin-left: 300px;
+  }
+}
+ @media screen and (min-width: 480px) {
+  #welcome-section img { float: left;width:100px;}
+  #main {margin-left: 300px;
+  }
+} 
+#welcome-section img{
+  margin-top:10%;
+  margin-left:50%;
+  border-radius: 50%;
+  box-shadow:0 0 5px black;
+}
+#projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+    background:url("https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80") center center no-repeat; 
+   background-size: cover;
+  background-attachment: fixed;
+
+}
+#projects h1{
+  margin-top:0%;
+  font-family: "Black Ops One";
+      font-size:50px;
+      color: #FF6347;
+   text-transform: uppercase;
+}
+#projects h2{
+  margin-top:0%;
+  font-family: 'Caveat Brush', cursive;
+      font-size:30px;
+      color: #CDD7B6;
+}
+#projects a{
+  margin-top:10px;
+    font-family: "Black Ops One";
+      font-size:20px;
+   text-transform: uppercase;
+  color: 	#FF8C00;
+  text-decoration:none;
+}
+
+
+
+#contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+    background:url("https://images.pexels.com/photos/159657/paint-notebook-brush-pencil-159657.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") center center no-repeat; 
+   background-size: cover;
+  background-attachment: fixed;
+
+}
+#contact h2{
+  font-family: "Black Ops One";
+      font-size:100px;
+      color: #CDD7B6;
+   text-transform: uppercase;
+}
+#contact a{
+  color: #CDD7B6;
+  text-decoration:none;
+}
+#contact li{
+  display:flex;
+  float:left;
+  list-style:none;
+    font-family: "Black Ops One";
+font-size:40px;
+   text-transform: uppercase;
+  background:grey;
+  padding:20px;
+  margin-right:20px;
+}
+
