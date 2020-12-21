@@ -1,7 +1,14 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 <link rel="stylesheet" href="style.css">
 <script type="text/javascript" src="script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+
 <div class="error-wrapper">
+  <button class="btn btn-danger btn-sm " onclick="prev();">Go Back</button>
+
   <div class="error-message">
     <h1>Intruder!</h1>
     <h2>403: Forbidden</h2>
@@ -78,3 +85,10 @@
   </svg>
 
 </div>
+<script>
+
+ function prev() {
+ window.location.href = '../index.html';
+ }
+
+  </script>

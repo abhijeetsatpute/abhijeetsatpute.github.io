@@ -21,7 +21,8 @@
   <body >
 
     <div class="first--slide">
-      <button class="btn btn-danger btn-sm " onclick="openFullscreen();">Open Fullscreen</button>
+      <button class="btn btn-info btn-sm float-left" onclick="prev();">Prev</button>
+      <button class="btn btn-success btn-sm float-right" onclick="next();">Next</button>
       <div class="slide--content">
         <h1>hello</h1>
         <h2>My Khushi</h2>
@@ -1985,7 +1986,8 @@
     </div>
 
     <div class="second--canvas">
-      <button class="btn btn-danger btn-sm " onclick="openFullscreen();">Open Fullscreen</button>
+      <button class="btn btn-info btn-sm float-left" onclick="prev();">Prev</button>
+      <button class="btn btn-success btn-sm float-right" onclick="next();">Next</button>
       <div class="content">
         <h2>let's</h2>
         <h2>celebrate</h2>
@@ -1998,8 +2000,9 @@
 
         <img src="src/images/rose.png" alt="" id="b1" />
         <img src="src/images/amusement-park.png" alt="" id="b2" />
-        <button class="btn btn-danger btn-sm float-left" onclick="openFullscreen();">Open Fullscreen</button>
-        <button class="btn btn-danger btn-sm float-right" onclick="next();">Next</button>
+        <button class="btn btn-info btn-sm float-left" onclick="prev();">Prev</button>
+        <button class="btn btn-success btn-sm float-right" onclick="next();">Next</button>
+
       </div>
       <div class="center--line">
 
@@ -2035,6 +2038,9 @@
 
   function next() {
     window.location.href = '../wish2/index.html';
+  }
+  function prev() {
+  window.location.href = '../Index/index.html';
   }
   </script>
   </body>
