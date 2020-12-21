@@ -1,19 +1,69 @@
 <HEAD>
-<SCRIPT language="JavaScript">
-<!--hide
-
-var password;
-var pass1="hibaby";
-
-password=prompt('Please enter your password to view this page!',' ');
-
-if (password==pass1)
-  window.location="Index/index.html";
-else
-   {
-    alert('Password Incorrect! Click OK to enter!');
-    location.reload();
-    }
-//-->
-</SCRIPT>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </HEAD>
+<body>
+  <link rel="stylesheet" href="style.css">
+  <div class="full-screen">
+    <div>
+      <h1>Enter The Password Bubb</h1><br>
+
+      <form>
+        <div class="form-group">
+          <input type="password" class="form-control" id="pswd" placeholder="Password">
+        </div>
+        <button onclick="myFunction()" class="btn btn-success">Submit</button>
+      </form>
+      <br><br><br>
+      <button class="btn btn-danger" onclick="openFullscreen();">Open Fullscreen</button>
+      <button class="btn btn-primary" onclick="closeFullscreen();">Close Fullscreen</button><br><br><br>
+      <div class="alert alert-danger alert-dismissible">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Listenn !</strong> This will best work in Fullscreen Mode, If you got the password until now. Proceed :)
+      </div>
+
+  </div>
+
+
+  <SCRIPT language="JavaScript">
+    function myFunction() {
+      var pass1="hibaby";
+      var x = document.getElementById("pswd").value;
+      if (x==pass1)
+      location.href="https://abhijeetsatpute.github.io/bday/Index/index.html";
+      else
+         {
+          alert('Password Incorrect! Click OK to enter!');
+          location.reload();
+          }
+    }
+
+
+
+  </SCRIPT>
+
+
+  <script>
+var elem = document.documentElement;
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.webkitExitFullscreen) { /* Safari */
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) { /* IE11 */
+    document.msExitFullscreen();
+  }
+}
+</script>
+</body>
