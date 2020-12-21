@@ -3,18 +3,27 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </HEAD>
+<SCRIPT language="JavaScript">
+  function checkAnswer(){
+    var response = document.getElementById('answer').value;
+    if (response == "hibaby")
+        location = 'Index/index.html';
+    else
+        location = 'intruder/index.html';
+    return false;
+}
+</SCRIPT>
 <body>
   <link rel="stylesheet" href="style.css">
   <div class="full-screen">
     <div>
       <h1>Enter The Password Bubb</h1><br>
 
-      <form>
-        <div class="form-group">
-          <input type="password" class="form-control" id="pswd" placeholder="Password">
-        </div>
-        <button onclick="myFunction()" class="btn btn-success">Submit</button>
+      <form onSubmit="return checkAnswer();">
+      <input id="answer" type="password" maxlength="55" class="  input-lg" autofocus /><br><br>
+      <input class="btn btn-success" type="submit" class="submit" value="SUBMIT" />
       </form>
+
       <br><br><br>
       <button class="btn btn-danger" onclick="openFullscreen();">Open Fullscreen</button>
       <button class="btn btn-primary" onclick="closeFullscreen();">Close Fullscreen</button><br><br><br>
@@ -26,22 +35,7 @@
   </div>
 
 
-  <SCRIPT language="JavaScript">
-    function myFunction() {
-      var pass1="hibaby";
-      var x = document.getElementById("pswd").value;
-      if (x==pass1)
-      location.href="https://abhijeetsatpute.github.io/bday/Index/index.html";
-      else
-         {
-          alert('Password Incorrect! Click OK to enter!');
-          location.reload();
-          }
-    }
 
-
-
-  </SCRIPT>
 
 
   <script>
