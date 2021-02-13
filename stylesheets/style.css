@@ -212,6 +212,14 @@ ion-icon {
 .icon-email:hover {
   background: #004f9f;
 }
+.icon-whatsapp {
+  color: #075e54;
+}
+
+.icon-whatsapp:hover {
+  background: #075e54	;
+}
+
 
 .icon-github {
   color: #333;
