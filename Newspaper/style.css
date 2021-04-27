@@ -99,3 +99,8 @@ body  {
 .nav-item:nth-child(5) {
   background-color: #a29bfe;
 }
+
+.header {
+  text-align:right;
+  font-size: 10px;
+}
