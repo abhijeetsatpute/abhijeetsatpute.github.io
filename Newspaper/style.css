@@ -1,0 +1,101 @@
+body  {
+  background-image: url("https://images.freecreatives.com/wp-content/uploads/2015/04/ivory-off-white-paper-texture.jpg");
+  background-repeat:repeat;
+  background-attachment: fixed;
+}
+
+.Title {
+  text-align: center;
+  font-size: 70px;
+  font-family: 'Parisienne', cursive;
+  margin: 35px;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  border-top: 3px solid black;
+  border-left: 1px solid black;
+}
+
+.half {
+  width: 50%;
+}
+
+.quarter {
+  width: 25%;
+}
+
+.three-quarter {
+  width: 75%;
+}
+
+.story {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.story-title {
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+  font-size: 30px;
+}
+
+.story-text {
+  line-height: 1.2;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.story-img {
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+
+.link {
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+  padding-left: 30px;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 10px;
+  align-items:  center;
+  color: #666;
+}
+
+.link:hover {
+  border: 2px solid grey;
+  border-radius: 10px;
+  font-size: 60px;
+}
+
+.nav-item:nth-child(1) {
+  background-color: #ffeaa7;
+}
+.nav-item:nth-child(2) {
+  background-color: #81ecec;
+}
+.nav-item:nth-child(3) {
+  background-color: #55efc4;
+}
+.nav-item:nth-child(4) {
+  background-color: #74b9ff;
+}
+.nav-item:nth-child(5) {
+  background-color: #a29bfe;
+}
